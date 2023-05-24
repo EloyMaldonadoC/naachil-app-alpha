@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { View, Text, StyleSheet, Dimensions } from "react-native";
 import { useRoute } from "@react-navigation/native";
 import MapView, { Marker } from "react-native-maps";
-import NumberFormat from "react-native-intl/lib/NumberFormat";
 //Firebase
 import { db } from "../utils/firebaseConfig";
 import { doc, getDoc } from "firebase/firestore";

@@ -34,7 +34,7 @@ const LocalLocalization = () => {
   useEffect(() => {
     obtenerUbicacion();
     obtenerDatosLocal();
-    
+
   }, [route]);
 
   /*<MapView style={styles.mapView} initialRegion={ubicacionLocal}>
@@ -47,7 +47,7 @@ const LocalLocalization = () => {
   return (
     <View style={styles.container}>
       <View style={styles.mapContainer}>
-        
+
       </View>
       <View style={styles.dataContainer}>
         <Text styles={styles.container}>

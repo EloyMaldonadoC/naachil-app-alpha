@@ -368,6 +368,25 @@ const RegistroLocal = () => {
     }, [])
   );
 
+  /*<MapView
+                  style={styles.map}
+                  showsUserLocation={true}
+                  followsUserLocation={true}
+                  initialRegion={location}
+                  onPress={(evento) =>
+                    setLocation(evento.nativeEvent.coordinate)
+                  }
+                >
+                  <Marker
+                    coordinate={location}
+                    draggable
+                    onDragEnd={(direction) =>
+                      setLocation(direction.nativeEvent.coordinate)
+                    }
+                    title="Ubicación seleccionada"
+                  />
+                </MapView>*/
+
   return (
     <SafeAreaProvider>
       <View style={styles.container}>
@@ -544,24 +563,7 @@ const RegistroLocal = () => {
                 estar en el local, despues agrega tu dirección.
               </Text>
               {location.latitude ? (
-                <MapView
-                  style={styles.map}
-                  showsUserLocation={true}
-                  followsUserLocation={true}
-                  initialRegion={location}
-                  onPress={(evento) =>
-                    setLocation(evento.nativeEvent.coordinate)
-                  }
-                >
-                  <Marker
-                    coordinate={location}
-                    draggable
-                    onDragEnd={(direction) =>
-                      setLocation(direction.nativeEvent.coordinate)
-                    }
-                    title="Ubicación seleccionada"
-                  />
-                </MapView>
+                <></>
               ) : (
                 <TouchableOpacity
                   style={styles.buttonImage}

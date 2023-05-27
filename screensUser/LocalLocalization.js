@@ -37,16 +37,17 @@ const LocalLocalization = () => {
     
   }, [route]);
 
-  return (
-    <View style={styles.container}>
-      <View style={styles.mapContainer}>
-      <MapView style={styles.mapView} initialRegion={ubicacionLocal}>
+  /*<MapView style={styles.mapView} initialRegion={ubicacionLocal}>
           <Marker
             coordinate={ubicacionLocal}
             title={dataLocal.name}
             description={dataLocal.description}
           />
-        </MapView>
+        </MapView>*/
+  return (
+    <View style={styles.container}>
+      <View style={styles.mapContainer}>
+        
       </View>
       <View style={styles.dataContainer}>
         <Text styles={styles.container}>
